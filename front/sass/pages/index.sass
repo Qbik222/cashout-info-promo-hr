@@ -1,67 +1,252 @@
+$dark-blue: #00003D
 $blue: #000055
 $white: #ffffff
 $magenta: #FF267E
-$green: #3AFFC3
+$green: #05C489
+$green-hover: #09B47F
 $black: #1B1B1F
 
 $font-suisse-intl-reg: SuisseIntl-Regular, sans-serif
 $font-suisse-intl-bold: SuisseIntl-Bold, sans-serif
-$font-legal: DINPro-CondLight, sans-serif
-$font-riffic-bold: Riffic-Bold, sans-serif
+$font-lemon-thusday: Lemon-Tuesday, sans-serif
 
 body
   overscroll-behavior: none
+  -webkit-tap-highlight-color: transparent
   img
     max-width: 100%
     height: auto
-.land
-  height: calc(100% - 83px)
+
+.container
+  max-width: 1440px
+  margin: 0 auto
+
+.btn
+  display: inline-block
+  overflow: visible
+  width: 300px
   position: relative
-  &__logo
+  z-index: 10
+  transition: opacity .4s ease
+  text-transform: uppercase
+  pointer-events: initial
+  background: url("../img/btn-bg.png") no-repeat 0 0/contain
+
+  &:hover
+    cursor: pointer
+    background: url("../img/btn-bg-hover.png") no-repeat 0 0/contain
+
+  span
+    user-select: none
+    display: flex
+    align-items: center
+    padding: 0 15px 4px 0
+    justify-content: center
+    font-size: 22px
+    position: relative
+    z-index: 3
+    width: 100%
+    height: 82px
+    text-align: center
+    transition: background-color .3s ease-in-out
+    font-family: $font-suisse-intl-bold
+    color: $dark-blue
+.fav-page
+  padding: 100px 0 0 0
+  overflow: hidden
+  background: url("../img/desc-bg-light.jpg") repeat 0 0/contain
+  @media screen and (max-width: 1024px)
+    background: url("../img/tab-bg-light.png") no-repeat 0 0/contain
+  @media screen and (max-width: 500px) and (orientation: portrait)
+      background: url("../img/mob-bg-light.png") no-repeat 0 0/contain
+  @media screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape)
+      background: url("../img/mob-bg-light.png") no-repeat 0 0/contain
+
+.info
+  width: 100%
+  display: flex
+  align-items: center
+  &__left
+    position: relative
+    min-width: 65%
+    z-index: 2
+    &::before
+      content: ""
+      display: block
+      width: 60%
+      height: 90%
+      background: url("../img/info-title-decor.png") no-repeat 0 0/contain
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 0
+      transform: translate(-25%, -25%)
+
+  &__right
+    display: block
+    height: 555px
+    position: relative
+    min-width: 665px
+    max-width: 665px
+    margin: 0 0 0 -10%
+    z-index: 1
+    &::before
+      content: ""
+      display: block
+      width: 68px
+      height: 75px
+      position: absolute
+      bottom: 0
+      right: 0
+      background: url("../img/anim-decor.png") no-repeat 0 0/contain
+      transform: translate(35%, 50%)
+      z-index: 2
+  &__title
+    font-family: $font-suisse-intl-bold
+    color: $white
+    font-size: 60px
+    transform: rotate(-2deg)
+    text-transform: uppercase
+    z-index: 2
+    span
+      text-transform: lowercase
+      font-family: $font-lemon-thusday
+      color: $magenta
+      font-size: 70px
+  &__subtitle
+    &-top
+      font-family: $font-suisse-intl-bold
+      font-size: 120px
+      padding: .1em .1em .1em .65em
+      margin: -27px 0 0 -.65em
+      transform: rotate(-2deg)
+      color: $dark-blue
+      text-transform: uppercase
+      background: url("../img/info-subtitle-bg.png") no-repeat 0 0/contain
+    &-bottom
+      font-family: $font-suisse-intl-bold
+      font-size: 28px
+      color: $dark-blue
+      background: $white
+      display: inline-block
+      text-transform: uppercase
+      padding: .1em .3em
+      transform: rotate(-2deg) translateY(-25px)
+      margin: 0 0 0 35px
+  &__text
+    display: flex
+    flex-direction: column
+    gap: 10px
+    max-width: 560px
+    margin: 5px 0 0 35px
+    &-item
+      color: $white
+      font-family: $font-suisse-intl-reg
+      font-size: 17px
+  &__btn
+    margin: 30px 0 0 35px
+  &__pers
+    width: 100%
     position: absolute
     top: 0
-    left: 0
-    max-width: 300px
-.footer
-  background: $blue
-  height: 83px
-  display: flex
-  padding: 5px 20px 5px 35px
-  align-items: center
-  justify-content: space-between
-  &__wrap
-    display: flex
-    align-items: center
-  &__text
-    color: $white
-    font-family: $font-suisse-intl-reg
-    font-size: 14px
-    line-height: 22px
-    max-width: 975px
-    opacity: .8
-  &__licensed
-    display: flex
-    align-items: center
-    gap: 18px
-    margin: 0 35px 0 auto
-    flex-shrink: 0
-  &__btns
-    display: flex
-    align-items: center
-  &__appstore
+    right: 0
+    transform: translate(50%, -14%)
+    max-width: 685px
+  &__animation
     display: block
-    background: url("../img/appleBtn.png") no-repeat 0 0/contain
-    width: 114px
-    height: 38px
-  &__googlePlay
-    display: block
-    background: url("../img/googleBtn.svg") no-repeat 0 0/contain
-    width: 128px
-    height: 38px
-    margin-left: 10px
+    min-height: 100%
+    -webkit-mask-image: url("../img/anim-mask.png")
+    -webkit-mask-repeat: no-repeat
+    -webkit-mask-size: 100% 100%
+    background: url("../img/anim-bg.jpg") repeat 0 0/cover
+    background-size: 100% 100%
+    animation: bg-animation 250s ease infinite
 
-.legal
-  font-family: $font-legal
-  font-size: 4.7vw
-  padding: 0 15px
-  text-align: center
+
+.guide
+  display: flex
+  margin: 100px 0 0 0
+
+  position: relative
+  &::before
+    content: ""
+    display: block
+    width: 120%
+    height: 100%
+    position: absolute
+    top: -25%
+    left: -10%
+    z-index: 0
+    background: url("../img/light-bg-text-desc.png") no-repeat 0 0/contain
+    @media screen and (max-width: 1024px)
+      background: url("../img/light-bg-text-tab.png") no-repeat 0 0/contain
+    @media screen and (max-width: 500px) and (orientation: portrait)
+      background: url("../img/light-bg-text-mob.png") no-repeat 0 0/contain
+    @media screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape)
+      background: url("../img/light-bg-text-mob.png") no-repeat 0 0/contain
+
+  &__left
+    position: relative
+    z-index: 1
+    width: 50%
+  &__right
+    position: relative
+    z-index: 1
+    width: 50%
+    margin: -4% 0 0 -10%
+  &__title
+    font-family: $font-suisse-intl-bold
+    color: $white
+    font-size: 60px
+    transform: rotate(-2deg)
+    text-transform: uppercase
+    z-index: 2
+  &__subtitle
+    display: inline-block
+    margin: -12px 0 0 0
+    font-family: $font-suisse-intl-bold
+    font-size: 86px
+    transform: rotate(-2deg)
+    color: $dark-blue
+    text-transform: uppercase
+    text-align: center
+    background: url("../img/guide-subtitle-bg.png") no-repeat 0 0/contain
+    padding: 0.03em 0.5em 0 0.25em
+  &__wrap
+    max-width: 590px
+    margin: -15px 0 0 20px
+    position: relative
+    &::before
+      content: ""
+      display: block
+      width: 99%
+      height: 98%
+      transform: rotate(-1.605deg)
+      background: transparent
+      border: 5px solid $white
+      position: absolute
+      bottom: -13px
+      right: -13px
+      z-index: 0
+  &__list
+    width: 100%
+    border: 5px solid $blue
+    background: $white
+    transform: rotate(-1.605deg)
+    padding: 20px 20px 20px 40px
+    position: relative
+    z-index: 1
+    &-item
+      font-family: $font-suisse-intl-bold
+      color: $dark-blue
+      &:not(:first-child)
+        margin: 10px 0 0 0
+  &__btn
+    margin: 25px 0 0 40px
+
+@keyframes bg-animation
+  0%
+    background-position: 0 0
+  100%
+    background-position: -4000px 0
+
