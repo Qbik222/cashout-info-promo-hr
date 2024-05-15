@@ -257,19 +257,28 @@
     &__subtitle
       font-size: 40px
     &__wrap
-      margin: 250px 0 0 5px
+      margin: 320px 0 0 5px
+      max-width: 100%
       &::before
         width: 96%
         height: 98%
     &__right
-      min-width: 345px
-      max-width: 345px
+      min-width: 430px
+      max-width: 430px
       position: absolute
-      top: -10px
+      top: -25px
       left: 59%
       transform: translate(-50%, 0)
     &__btn
       margin: 25px 0 0 10px
+
+@media screen and (max-width: 385px)
+  .guide
+    &__right
+      max-width: 400px
+      min-width: 400px
+    &__wrap
+      margin-top: 290px
 
 @media screen and (max-width: 370px )
   .info
@@ -293,14 +302,26 @@
       &-item
         font-size: 12px
 
+@media screen and (max-width: 360px)
+  .guide
+    &__right
+      max-width: 380px
+      min-width: 380px
+    &__wrap
+      margin-top: 270px
+
 @media screen and (max-width: 345px)
   .info
     &__pers
       max-width: 320px
       min-width: 320px
   .guide
-    //&__right
-    //  left: 0
+    &__right
+      max-width: 350px
+      min-width: 350px
+      top: -15px
+    &__wrap
+      margin-top: 250px
     &__list
       &-item
         font-size: 12px
