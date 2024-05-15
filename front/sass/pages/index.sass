@@ -73,6 +73,7 @@ body.dark
   font-family: $font-suisse-intl-bold
   color: $dark-blue
   background: url("../img/btn-bg.png") no-repeat 0 0/contain
+  animation: btn-anim 1.7s infinite
   &:hover
     cursor: pointer
     background: url("../img/btn-bg-hover.png") no-repeat 0 0/contain
@@ -281,3 +282,12 @@ body.dark
   100%
     background-position: -15000px 0
 
+@keyframes btn-anim
+  0%, 100%
+   transform: rotate(-2deg)
+  25%
+    transform: scale(1.05) rotate(-2deg)
+  50%
+    transform: scale(1.05) rotate(1deg)
+  75%
+    transform: scale(1.05) rotate(-2deg)
