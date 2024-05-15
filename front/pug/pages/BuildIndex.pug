@@ -1,4 +1,5 @@
 .fav-page
+    button.dark-btn dark
     .container
         .info
             .info__left
@@ -7,15 +8,16 @@
                     .info__subtitle-top з кешаутом
                     .info__subtitle-bottom Хто контролює гру, контролює ситуацію
                 .info__text
-                    span.info__text-item З кешаутом від FAVBET у тебе все під контролем. Круто?
+                    span.info__text-item З кешаутом від FAVBET у тебе все під контролем.
                     span.info__text-item Якщо вагаєшся, функціонал допомагає забрати кошти до розрахунку ставки та моментально отримати запропоновану організатором суму на баланс.
                     span.info__text-item Круто? Звісно круто.
-                a(href='#').info__btn.btn #[span зробити ставку]
+                a(href='#').info__btn.btn зробити ставку
                 .info__pers
                     picture
-                        source(srcset="./img/pers-desc.png" media="(min-width: 601px)")
-                        source(srcset="./img/pers-tab.png" media="(max-width: 1024px)")
-                        source(srcset="./img/pers-mob.png" media="(max-width: 950px) and (max-height: 450px) and (orientation: landscape")
+                        source(srcset="./img/pers-desc.png" media="(min-width: 1025px)")
+                        source(srcset="./img/pers-tab.png" media="(min-width: 601px)")
+                        source(srcset="./img/pers-mob.png" media="(max-width: 600px)")
+                        source(srcset="./img/pers-mob.png" media="(max-width: 950px) and (max-height: 450px) and (orientation: landscape)")
                         img(src="./img/pers-mob.png" alt="favbet")
             .info__right
                 .info__animation
@@ -30,10 +32,17 @@
                         li.guide__list-item До чи під час події заходь в «КУПОН» — «МОЇ СТАВКИ» або в особистий кабінет та обирай розділ «ІСТОРІЯ СТАВОК»
                         li.guide__list-item Якщо ставка відповідає умовам «кешауту», з’явиться кнопка «CASHOUT» та запропонована сума. Якщо тебе влаштовує сума, тисни кнопку «ПІДТВЕРДІТЬ CASHOUT».
                         li.guide__list-item CASHOUT підтверджено. Чекай на повернення коштів
-                a(href="#").guide__btn.btn #[span зробити ставку]
+                a(href="#").guide__btn.btn зробити ставку
             .guide__right
-                picture
-                    source(srcset="./img/phone-desc.png" media="(min-width: 601px)")
-                    source(srcset="./img/phone-tab.png" media="(max-width: 1024px)")
-                    source(srcset="./img/phone-mob.png" media="(max-width: 950px) and (max-height: 450px) and (orientation: landscape")
-                    img(src="./img/phone-mob.png" alt="favbet")
+                picture.light-mob
+                    source(srcset="./img/phone-desc.png" media="(min-width: 1025px)")
+                    source(srcset="./img/phone-tab.png" media="(min-width: 601px)")
+                    source(srcset="./img/phone-mob.png" media="(max-width: 600px) and (orientation: portrait")
+                    source(srcset="./img/phone-tab.png" media="(max-width: 950px) and (max-height: 450px) and (orientation: landscape")
+                    img(src="./img/phone.png" alt="favbet")
+                picture.dark-mob
+                    source(srcset="./img/phone-desc-dark.png" media="(min-width: 1025px)")
+                    source(srcset="./img/phone-tab-dark.png" media="(min-width: 601px)")
+                    source(srcset="./img/phone-mob-dark.png" media="(max-width: 600px) and (orientation: portrait")
+                    source(srcset="./img/phone-tab-dark.png" media="(max-width: 950px) and (max-height: 450px) and (orientation: landscape")
+                    img(src="./img/phone-mob-dark.png" alt="favbet")

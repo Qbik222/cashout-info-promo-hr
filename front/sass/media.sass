@@ -1,0 +1,372 @@
+@media screen and (max-width: 1550px)
+  .container
+    max-width: 1280px
+  .info
+    &__title
+      font-size: 50px
+      span
+        font-size: 60px
+    &__subtitle
+      &-top
+        font-size: 100px
+        margin-top: -21px
+      &-bottom
+        font-size: 24px
+        transform: translate(0, -17px) rotate(-2deg)
+        margin: 0 0 0 25px
+    &__text
+      max-width: 480px
+      margin-left: 25px
+      &-item
+        font-size: 15px
+    &__btn
+      margin-left: 25px
+    &__right
+      margin: 0 0 0 -17%
+      height: 500px
+      min-width: 600px
+      max-width: 600px
+    &__pers
+      transform: translate(46%, -16%)
+      max-width: 660px
+  .guide
+    &::before
+      width: 110%
+      left: -5%
+    &__right
+      margin: -4% 0 0 -3%
+
+@media screen and (max-width: 1300px)
+  .container
+    max-width: 1024px
+  .info
+    &__subtitle
+      &-top
+        font-size: 86px
+      &-bottom
+        font-size: 20px
+    &__text
+      max-width: 381px
+      &-item
+        font-size: 14px
+    &__pers
+      max-width: 560px
+      transform: translate(53%, -13%)
+    &__right
+      max-width: 500px
+      min-width: 500px
+      height: 455px
+      margin: 0 0 0 -16%
+
+  .guide
+    &__title
+      font-size: 42px
+    &__subtitle
+      font-size: 60px
+    &__wrap
+      max-width: 410px
+    &__list
+      padding: 10px 10px 10px 30px
+      &-item
+        font-size: 14px
+    &__right
+      width: 60%
+      margin: -4% 0 0 -8%
+
+
+@media screen and (max-width: 1024px)
+  .fav-page
+    padding-top: 50px
+  .btn
+    font-size: 17px
+    width: 213px
+    height: 60px
+    padding: 0 8px 2px 0
+  .container
+    max-width: 720px
+  .info
+    &__title
+      font-size: 36px
+      span
+        font-size: 36px
+        position: relative
+        bottom: 5px
+    &__subtitle
+      &-top
+        padding: 0.1em 0.1em 0.1em 0.6em
+        font-size: 46px
+        margin: -15px 0 0 -.65em
+      &-bottom
+        font-size: 13px
+        transform: translate(0, -8px) rotate(-2deg)
+        margin-left: 9px
+        background-position: 0 -3px
+    &__text
+      max-width: 340px
+      margin-left: 0
+    &__btn
+      margin-left: 0
+    &__left
+      &::before
+        width: 50%
+        height: 50%
+    &__right
+      min-width: 345px
+      max-width: 345px
+      height: 255px
+      margin: -10% 0 0 -13%
+      &::before
+        width: 48px
+        height: 53px
+        bottom: -7px
+    &__pers
+      max-width: 395px
+      transform: translate(66%, -6%)
+  .guide
+    margin-top: 50px
+    &__title
+      font-size: 30px
+    &__subtitle
+      font-size: 46px
+      margin-top: -5px
+    &__wrap
+      margin: 5px 0 0 5px
+      max-width: 345px
+      &::before
+        border-width: 2px
+        bottom: -7px
+        right: -7px
+    &__list
+      border-width: 2px
+      padding: 5px 10px 5px 35px
+      &-item:not(:first-child)
+        margin: 7px 0 0 0
+    &__right
+      max-width: 423px
+      min-width: 423px
+      margin: -7% 0 0 -10%
+
+
+@media screen and (max-width: 760px)
+  .fav-page
+    padding-top: 20px
+  .info
+    position: relative
+    z-index: 4
+  .info, .guide
+    transform: scale(.88)
+  .guide
+    margin-top: 0
+
+@media screen and (max-width: 660px)
+  .info
+    &__pers
+      max-width: 335px
+      transform: translate(69%, -8%)
+
+@media screen and (max-width: 500px)
+  .fav-page
+    padding-top: 50px
+  .container
+    width: 100%
+    padding: 0 15px
+  .info
+    transform: scale(1)
+    flex-direction: column-reverse
+    &__right
+      min-width: 100%
+      max-width: 100%
+      height: 255px
+      margin: 0
+      &::before
+        bottom: 12px
+        right: 2px
+      &::after
+        content: ""
+        display: block
+        width: 50%
+        height: 50%
+        background: url("../img/info-title-decor.png") no-repeat 0 0/contain
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+        transform: translate(-15%, -25%)
+    &__pers
+      max-width: 350px
+      min-width: 350px
+      transform: translate(48%, -100%)
+      right: 50%
+    &__animation
+      max-height: 255px
+      min-height: 255px
+    &__left
+      width: 100%
+      margin: 15px 0 0 0
+      &::before
+        content: none
+    &__title
+      font-size: 31px
+      margin-left: 15px
+      display: inline-block
+      &::before
+        content: ""
+        display: block
+        background: url("../img/info-title-decor.png") no-repeat 0 0/contain
+        left: auto
+        right: 0
+        transform: translate(110px, 20px)
+        width: 174px
+        height: 174px
+        position: absolute
+      &::after
+        content: ""
+        display: block
+        position: absolute
+        top: 80px
+        right: -80px
+        width: 160px
+        height: 124px
+        z-index: 0
+        background: url("../img/info-mob-decor.png") no-repeat 0 0/contain
+      span
+        font-size: 31px
+    &__subtitle
+      &-top
+        font-size: 40px
+        margin: -12px 0 0 -10px
+      &-bottom
+        margin: 7px 0 0 13px
+    &__text
+      margin-top: 35px
+    &__btn
+      margin-top: 10px
+  .guide
+    transform: scale(1)
+    flex-direction: column
+    margin-top: 45px
+    &::before
+      width: 100%
+      left: 0
+      top: -17%
+    &__left, &__right
+      width: 100%
+    &__title
+      font-size: 27px
+      padding: 0 0 0 5px
+    &__subtitle
+      font-size: 40px
+    &__wrap
+      margin: 250px 0 0 5px
+      &::before
+        width: 96%
+        height: 98%
+    &__right
+      min-width: 345px
+      max-width: 345px
+      position: absolute
+      top: -10px
+      left: 59%
+      transform: translate(-50%, 0)
+    &__btn
+      margin: 25px 0 0 10px
+
+@media screen and (max-width: 370px )
+  .info
+    &__title
+      font-size: 27px
+      &::before
+        transform: translate(100px, 10px)
+      &::after
+        top: 65px
+        right: -70px
+      span
+        font-size: 27px
+    &__subtitle
+      &-top
+        font-size: 34px
+      &-bottom
+        font-size: 11px
+    &__text
+      position: relative
+      z-index: 3
+      &-item
+        font-size: 12px
+
+@media screen and (max-width: 345px)
+  .info
+    &__pers
+      max-width: 320px
+      min-width: 320px
+  .guide
+    //&__right
+    //  left: 0
+    &__list
+      &-item
+        font-size: 12px
+
+@media screen and (max-width: 320px)
+  .info
+    &__text
+      &-item
+        font-size: 11px
+    &__right
+      height: 225px
+    &__animation
+      min-height: 225px
+      max-height: 225px
+    &__pers
+      max-width: 310px
+      min-width: 310px
+    &__title
+      font-size: 26px
+      &::before
+        width: 144px
+        height: 144px
+        transform: translate(80px, 20px)
+      &::after
+        width: 120px
+        height: 84px
+        top: 75px
+        right: -35px
+      span
+        font-size: 26px
+    &__subtitle
+      &-top
+        font-size: 32px
+      &-bottom
+        font-size: 10px
+        margin: 5px 0 0 10px
+  .guide
+    &__title
+      font-size: 25px
+    &__subtitle
+      font-size: 37px
+    &__right
+      max-width: 315px
+      min-width: 315px
+    &__wrap
+      margin-top: 230px
+
+@media screen and (max-width: 650px) and (orientation: landscape)
+  .info, .guide
+    transform: scale(.8)
+  .fav-page
+    padding: 10px 0
+  .info
+    &__left
+      margin-left: -40px
+    &__pers
+      transform: translate(81%, -4%)
+    &__right
+      margin-left: -10%
+    &__text
+      max-width: 310px
+      &-item
+        font-size: 12px
+  .guide
+    margin-top: -50px
+    &__title
+      font-size: 26px
+    &__subtitle
+      font-size: 40px
