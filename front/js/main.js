@@ -30,6 +30,13 @@ function getOS() {
 const operatingSystem = getOS();
 
 if (operatingSystem === 'Android') {
-    document.querySelector('.info__subtitle-top').style.backgroundPosition = "-5px, -9px"
-    document.querySelector('.guide__subtitle').style.backgroundPosition = "0, -.12em"
+    if(window.innerWidth <= 600){
+        document.querySelector('.info__subtitle-top').style.backgroundPosition = "-5px, -9px"
+        document.querySelector('.guide__subtitle').style.backgroundPosition = "0, -.12em"
+    }
+    if(window.innerWidth <= 1024){
+        document.querySelector('.info__subtitle-top').style.backgroundPosition = "-5px, -14px"
+        document.querySelector('.guide__subtitle').style.backgroundPosition = "0, -.16em"
+    }
+
 }
