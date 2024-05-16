@@ -124,7 +124,7 @@ body.dark
       height: 75px
       position: absolute
       bottom: 0
-      right: 0
+      right: 65px
       background: url("../img/anim-decor.png") no-repeat 0 0/contain
       transform: translate(35%, 50%)
       z-index: 2
@@ -142,15 +142,16 @@ body.dark
       font-size: 70px
   &__subtitle
     &-top
+      display: inline-block
       font-family: $font-suisse-intl-bold
       font-size: 120px
-      padding: .1em .1em .1em .65em
+      padding: .1em .1em .1em .6em
       margin: -27px 0 0 -.65em
       transform: rotate(-2deg)
       color: $dark-blue
       text-transform: uppercase
       background-size: 8em
-      background: url("../img/info-subtitle-bg.png") no-repeat -5px -.14em/cover
+      background: url("../img/info-subtitle-bg.png") no-repeat -5px 0/cover
     &-bottom
       font-family: $font-suisse-intl-bold
       font-size: 28px
@@ -179,7 +180,7 @@ body.dark
     position: absolute
     top: 0
     right: 0
-    transform: translate(50%, -13%)
+    transform: translate(41%, -13%)
     max-width: 685px
   &__animation
     display: block
@@ -190,6 +191,8 @@ body.dark
     background: url("../img/anim-bg.jpg") repeat 0 0/cover
     background-size: 100% 100%
     animation: bg-animation 950s ease infinite
+    position: relative
+    right: 65px
 
 
 .guide
