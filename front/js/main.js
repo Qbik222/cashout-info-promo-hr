@@ -30,6 +30,6 @@ function getOS() {
 const operatingSystem = getOS();
 
 if (operatingSystem === 'Android') {
-    document.querySelector('.info__subtitle-top').style.backgroundPosition = "-5px, -7px"
-    document.querySelector('.guide__subtitle').style.backgroundPosition = "0, -.1em"
+    document.querySelector('.info__subtitle-top').style.backgroundPosition = "-5px, -9px"
+    document.querySelector('.guide__subtitle').style.backgroundPosition = "0, -.12em"
 }
