@@ -32,7 +32,7 @@ const operatingSystem = getOS();
 if (operatingSystem === 'Android') {
     if(window.innerWidth <= 1024){
         document.querySelector('.info__subtitle-top').style.backgroundPosition = "-5px, -9px"
-        document.querySelector('.info__subtitle-top').style.padding = "0.2em 0.2em 0.1em 0.5em"
+        document.querySelector('.info__subtitle-top').style.padding = "0.2em 0.35em 0.1em 0.5em"
         document.querySelector('.guide__subtitle').style.backgroundPosition = "0, -.15em"
         document.querySelector('.guide__subtitle').style.padding = "0.1em 0.5em 0 0.25em"
     }
