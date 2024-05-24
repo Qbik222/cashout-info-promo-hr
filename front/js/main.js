@@ -1,9 +1,3 @@
-const darkBtn = document.querySelector('.dark-btn')
-
-darkBtn.addEventListener("click", () =>{
-    document.body.classList.toggle("dark")
-})
-
 function getOS() {
     const userAgent = window.navigator.userAgent;
     const platform = window.navigator.platform;
